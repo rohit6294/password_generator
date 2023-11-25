@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/public/output.css">
+</head>
+<body class="bg-indigo-900 font-bold text-white w-screen h-screen flex justify-center items-center">
+    <div class="h-[50%] px-8 w-[50%] border flex flex-col  justify-center gap-5 items-center ">
+        <h1 class="font-bold text-xl">Password Generator</h1>
+        <span id="password" class="bg-white px-3 py-1 w-[100%] rounded text-gray-500">Click onn Generate button</span>
+        <div>
+            <button  onclick="generatePassword()" class="rounded px-4 py-1 font-bold bg-indigo-400">Generate</button>
+            <button  onclick="copyPassword()" class="rounded px-4 py-1 font-bold bg-indigo-400">Copy To Clipboard</button>
+        </div>
+        <div class="w-full flex flex-col justify-center items-center gap-3">
+            <div class="w-full flex  justify-between  items-center">
+                <span>Password Length</span>
+                <input id="length" class="px-2 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)] py-1  rounded bg-indigo-900 border border-l-0 w-[30%]" type="number" placeholder="enter">
+
+            </div>
+            <div class="w-full flex justify-between ">
+                <label for="uppercase">
+                    Include uppercase letters
+                </label>
+                <input type="checkbox" id="uppercase" name="uppercase">
+            </div>
+            <div class="w-full flex justify-between ">
+                <label for="lowercase">
+                    Include lowercase letters
+                </label>
+                <input type="checkbox" id="lowercase" name="lowercase">
+            
+            </div>
+            <div class="w-full flex justify-between ">
+                <label for="numbers">
+                    Include numbers
+                </label>
+                <input type="checkbox" id="numbers" name="num">
+            
+            </div>
+            <div class="w-full flex justify-between ">
+                <label for="symbols">
+                    Include symbols
+                </label>
+                <input type="checkbox" id="symbols" name="symbol">
+            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
